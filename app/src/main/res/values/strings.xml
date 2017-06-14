@@ -18,6 +18,7 @@
     <string name="divide">/</string>
     <string name="inputIsEmpty">Le champ de saisie ne doit pas être vide</string>
     <string name="stackAlreadyEmpty">La pile est déja vide !</string>
+    <string name="stackIsEmpty">La pile ne doit pas être vide pour effectuer cette opération</string>
     <string name="stackMustHaveAtLeastTwoValues">La pile doit contenir au moin 2 valeurs</string>
     <string name="divideByZeroError">Impossible de diviser par zero !</string>
 </resources>

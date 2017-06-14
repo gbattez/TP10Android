@@ -150,6 +150,14 @@ public class ActivityMain extends AppCompatActivity
 
     public void doOperation(char operationCharacter)
     {
+        if(stack.isEmpty())
+        {
+            Toast.makeText(this, R.string.stackIsEmpty, Toast.LENGTH_SHORT).show();
+        }
+        if(stack.size() == 1)
+        {
+            onClickEnter(textInput);
+        }
         if(stack.size() >= 2)
         {
             int nb2 = Integer.parseInt(stack.pop());
@@ -173,9 +181,6 @@ public class ActivityMain extends AppCompatActivity
 
             stack.push(String.valueOf(res));
             updateStack();
-        } else
-        {
-            Toast.makeText(this, R.string.stackMustHaveAtLeastTwoValues, Toast.LENGTH_SHORT).show();
         }
     }
 
